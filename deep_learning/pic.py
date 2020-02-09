@@ -1,4 +1,4 @@
-import tenosorflow as tf
+import tensorflow as tf
 
 print(tf.__version__)
 # 输出'2.0.0-alpha0'
