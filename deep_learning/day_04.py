@@ -1,3 +1,5 @@
+# coding=utf-8
+
 import os
 import tensorflow as tf
 
@@ -43,6 +45,17 @@ def demo():
         print(sess.graph)
 
 
+# 定义命令行参数
+# 1. 首先定义有哪些参数需要在运行时指定
+# 2. 从程序中获取定义的命令行参数
+# 第一个参数 名字 默认值 说明
+tf.flags.DEFINE_integer('max_step', 1000, '模型训练的步数')
+tf.flags.DEFINE_string('model_dir', ' ', '模型文件的加载路径')
+
+# 定义获取命令行参数名字
+FLAGS = tf.flags.FLAGS
+
+
 def my_regression():
     """
     自实现一个线性回归
@@ -70,8 +83,18 @@ def my_regression():
         # 4. 梯度下降优化损失 learning_rate = 0 ~ 1
         train_op = tf.train.GradientDescentOptimizer(0.1).minimize(loss)
 
-    # 定义一个初始化变量op
+    # 收集tensor
+    tf.summary.scalar('losses', loss)
+    tf.summary.histogram('weights', weight)
+
+    # 定义合并tensor的op
+    merged = tf.summary.merge_all()
+
+    # 定义一个初始化变量的op
     init_op = tf.global_variables_initializer()
+
+    # 定义一个保存模型的实例
+    saver = tf.train.Saver()
 
     # 通过会话运行程序
     with tf.compat.v1.Session() as sess:
@@ -84,10 +107,24 @@ def my_regression():
         # 建立事件文件
         file_writer = tf.compat.v1.summary.FileWriter('./tmp', graph=sess.graph)
 
+        # 加载模型 覆盖模型中随机定义的参数 从上次训练的参数结果开始
+        # 判断保存的训练结果文件是否存在
+        if os.path.exists('./tmp/ckpt/checkpoint'):
+            # saver.restore(sess, './tmp/ckpt/model')
+            saver.restore(sess, FLAGS.model_dir)
+
         # 循环训练 运行优化op
-        for i in range(1000):
+        for i in range(FLAGS.max_step):
             sess.run(train_op)
+            # 运行合并的tensor
+            summary = sess.run(merged)
+            # 写入事件文件
+            file_writer.add_summary(summary, i)
             print('第{}次运行,参数的权重为:{}, 偏置为:{}'.format(i, weight.eval(), bias.eval()))
+
+        # 保存 model为文件名字
+        # saver.save(sess, './tmp/ckpt/model')
+        saver.save(sess, FLAGS.model_dir)
 
     return None
 

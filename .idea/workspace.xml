@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2a2551c-4ac0-46c1-8f92-7713d24e9312" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deep_learning/MNIST_data/t10k-images-idx3-ubyte.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deep_learning/MNIST_data/t10k-labels-idx1-ubyte.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deep_learning/MNIST_data/train-images-idx3-ubyte.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deep_learning/MNIST_data/train-labels-idx1-ubyte.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deep_learning/day_04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deep_learning/day_05.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/events.out.tfevents.1581262240.keendeMacBook-Air.local" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/tmp/events.out.tfevents.1581237497.keendeMacBook-Air.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/day_06.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/ckpt/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/ckpt/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/ckpt/model.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/ckpt/model.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/csv_data/A.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/csv_data/B.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/csv_data/C.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/events.out.tfevents.1581298287.keendeMacBook-Air.local" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/events.out.tfevents.1581299571.keendeMacBook-Air.local" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/events.out.tfevents.1581299976.keendeMacBook-Air.local" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deep_learning/tmp/events.out.tfevents.1581302230.keendeMacBook-Air.local" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deep_learning/pic.py" beforeDir="false" afterPath="$PROJECT_DIR$/deep_learning/pic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_learning/day_04.py" beforeDir="false" afterPath="$PROJECT_DIR$/deep_learning/day_04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_learning/tmp/events.out.tfevents.1581262240.keendeMacBook-Air.local" beforeDir="false" afterPath="$PROJECT_DIR$/deep_learning/tmp/ckpt/model.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MNIST_data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/deep_learning/tmp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -59,18 +60,18 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/deep_learning/tmp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deep_learning/tmp" />
+      <recent name="$PROJECT_DIR$/deep_learning/tmp/csv_data" />
       <recent name="$PROJECT_DIR$/MNIST_data" />
       <recent name="D:\PycharmProjects\AI\pic" />
       <recent name="C:\Users\keen\PycharmProjects\AI" />
-      <recent name="C:\Users\keen\PycharmProjects\AI\data\instacart" />
-      <recent name="C:\Users\keen\PycharmProjects\AI\utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deep_learning/tmp" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.day_04">
+  <component name="RunManager" selected="Python.day_06">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="AI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,32 +94,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="day_03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="day_04" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/machine_learning" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/machine_learning/day_03.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="day_04" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AI" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deep_learning" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -156,10 +138,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="day_06" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deep_learning" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deep_learning/day_06.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AI" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -199,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.day_06" />
         <item itemvalue="Python.day_04" />
         <item itemvalue="Python.demo" />
         <item itemvalue="Python.day_05" />
         <item itemvalue="Python.pic" />
-        <item itemvalue="Python.day_03" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578707150733</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="version 2020020901">
+      <created>1581262429346</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581262429346</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -269,54 +280,63 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="version 2020011101" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 2020011101" />
+    <MESSAGE value="version 2020020901" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 2020020901" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="324" key="GridCell.Tab.0.bottom" timestamp="1581260085788">
+    <state x="584" y="112" key="CommitChangelistDialog2" timestamp="1581262429104">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="324" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1581260085788" />
+    <state x="584" y="112" key="CommitChangelistDialog2/0.23.1920.977@0.23.1920.977" timestamp="1581262429104" />
+    <state width="1899" height="324" key="GridCell.Tab.0.bottom" timestamp="1581262482402">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1899" height="324" key="GridCell.Tab.0.bottom/0.23.1920.977@0.23.1920.977" timestamp="1581262482402" />
     <state width="1899" height="324" key="GridCell.Tab.0.bottom/0.23.1920.978@0.23.1920.978" timestamp="1579274491493" />
-    <state width="1899" height="324" key="GridCell.Tab.0.center" timestamp="1581260085787">
+    <state width="1899" height="324" key="GridCell.Tab.0.center" timestamp="1581262482400">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="324" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1581260085787" />
+    <state width="1899" height="324" key="GridCell.Tab.0.center/0.23.1920.977@0.23.1920.977" timestamp="1581262482400" />
     <state width="1899" height="324" key="GridCell.Tab.0.center/0.23.1920.978@0.23.1920.978" timestamp="1579274491492" />
-    <state width="1899" height="324" key="GridCell.Tab.0.left" timestamp="1581260085786">
+    <state width="1899" height="324" key="GridCell.Tab.0.left" timestamp="1581262482399">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="324" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1581260085786" />
+    <state width="1899" height="324" key="GridCell.Tab.0.left/0.23.1920.977@0.23.1920.977" timestamp="1581262482399" />
     <state width="1899" height="324" key="GridCell.Tab.0.left/0.23.1920.978@0.23.1920.978" timestamp="1579274491491" />
-    <state width="1899" height="324" key="GridCell.Tab.0.right" timestamp="1581260085787">
+    <state width="1899" height="324" key="GridCell.Tab.0.right" timestamp="1581262482401">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="324" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1581260085787" />
+    <state width="1899" height="324" key="GridCell.Tab.0.right/0.23.1920.977@0.23.1920.977" timestamp="1581262482401" />
     <state width="1899" height="324" key="GridCell.Tab.0.right/0.23.1920.978@0.23.1920.978" timestamp="1579274491492" />
-    <state width="1899" height="324" key="GridCell.Tab.1.bottom" timestamp="1581260085789">
+    <state width="1899" height="324" key="GridCell.Tab.1.bottom" timestamp="1581262482404">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="324" key="GridCell.Tab.1.bottom/0.23.1920.977@0.23.1920.977" timestamp="1581260085789" />
+    <state width="1899" height="324" key="GridCell.Tab.1.bottom/0.23.1920.977@0.23.1920.977" timestamp="1581262482404" />
     <state width="1899" height="324" key="GridCell.Tab.1.bottom/0.23.1920.978@0.23.1920.978" timestamp="1579274491494" />
-    <state width="1899" height="324" key="GridCell.Tab.1.center" timestamp="1581260085788">
+    <state width="1899" height="324" key="GridCell.Tab.1.center" timestamp="1581262482403">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="324" key="GridCell.Tab.1.center/0.23.1920.977@0.23.1920.977" timestamp="1581260085788" />
+    <state width="1899" height="324" key="GridCell.Tab.1.center/0.23.1920.977@0.23.1920.977" timestamp="1581262482403" />
     <state width="1899" height="324" key="GridCell.Tab.1.center/0.23.1920.978@0.23.1920.978" timestamp="1579274491493" />
-    <state width="1899" height="324" key="GridCell.Tab.1.left" timestamp="1581260085788">
+    <state width="1899" height="324" key="GridCell.Tab.1.left" timestamp="1581262482402">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="324" key="GridCell.Tab.1.left/0.23.1920.977@0.23.1920.977" timestamp="1581260085788" />
+    <state width="1899" height="324" key="GridCell.Tab.1.left/0.23.1920.977@0.23.1920.977" timestamp="1581262482402" />
     <state width="1899" height="324" key="GridCell.Tab.1.left/0.23.1920.978@0.23.1920.978" timestamp="1579274491493" />
-    <state width="1899" height="324" key="GridCell.Tab.1.right" timestamp="1581260085789">
+    <state width="1899" height="324" key="GridCell.Tab.1.right" timestamp="1581262482403">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
-    <state width="1899" height="324" key="GridCell.Tab.1.right/0.23.1920.977@0.23.1920.977" timestamp="1581260085789" />
+    <state width="1899" height="324" key="GridCell.Tab.1.right/0.23.1920.977@0.23.1920.977" timestamp="1581262482403" />
     <state width="1899" height="324" key="GridCell.Tab.1.right/0.23.1920.978@0.23.1920.978" timestamp="1579274491494" />
     <state x="559" y="177" key="SettingsEditor" timestamp="1581228147028">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
     <state x="559" y="177" key="SettingsEditor/0.23.1920.977@0.23.1920.977" timestamp="1581228147028" />
     <state x="469" y="150" key="SettingsEditor/0.23.1920.978@0.23.1920.978" timestamp="1579274412737" />
+    <state x="560" y="251" key="Vcs.Push.Dialog.v2" timestamp="1581262435413">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="560" y="251" key="Vcs.Push.Dialog.v2/0.23.1920.977@0.23.1920.977" timestamp="1581262435413" />
     <state x="625" y="238" width="670" height="676" key="search.everywhere.popup" timestamp="1579448305832">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
